@@ -1,18 +1,17 @@
 //
-//  YBapi.m
+//  BaseApi.m
 //  RequestLib
 //
 //  Created by Dzy on 16/02/2017.
 //  Copyright © 2017 Dzy. All rights reserved.
 //
 
-#import "YBapi.h"
+#import "BaseApi.h"
 
 #import "ConstantStringHeader.h"
 #import "AFOAuth2Manager.h"
 
-@implementation YBapi
-
+@implementation BaseApi
 
 
 
@@ -36,7 +35,7 @@
 }
 
 + (instancetype)sharedManager {
-    static YBapi *manager = nil;
+    static BaseApi *manager = nil;
     static dispatch_once_t pred;
     dispatch_once(&pred, ^{
         manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:BaseUrl]];

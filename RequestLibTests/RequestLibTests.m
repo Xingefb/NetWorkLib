@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "YbcfApi.h"
+#import "RequestApi.h"
 @interface RequestLibTests : XCTestCase
 
 @end
@@ -25,7 +25,7 @@
 }
 
 - (void)testExample {
-    [YbcfApi hello];
+    [RequestApi hello];
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }

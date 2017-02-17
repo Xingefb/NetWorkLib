@@ -29,10 +29,10 @@
 		40DA3CF11E554F0F00043BF3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DA3CDF1E554F0F00043BF3 /* AFURLResponseSerialization.m */; };
 		40DA3CF21E554F0F00043BF3 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DA3CE01E554F0F00043BF3 /* AFURLSessionManager.h */; };
 		40DA3CF31E554F0F00043BF3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DA3CE11E554F0F00043BF3 /* AFURLSessionManager.m */; };
-		40DA3CF61E5558D600043BF3 /* YbcfApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DA3CF41E5558D600043BF3 /* YbcfApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40DA3CF71E5558D600043BF3 /* YbcfApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DA3CF51E5558D600043BF3 /* YbcfApi.m */; };
-		40DA3D001E55887400043BF3 /* YBapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DA3CFE1E55887400043BF3 /* YBapi.h */; };
-		40DA3D011E55887400043BF3 /* YBapi.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DA3CFF1E55887400043BF3 /* YBapi.m */; };
+		40DA3CF61E5558D600043BF3 /* RequestApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DA3CF41E5558D600043BF3 /* RequestApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DA3CF71E5558D600043BF3 /* RequestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DA3CF51E5558D600043BF3 /* RequestApi.m */; };
+		40DA3D001E55887400043BF3 /* BaseApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DA3CFE1E55887400043BF3 /* BaseApi.h */; };
+		40DA3D011E55887400043BF3 /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DA3CFF1E55887400043BF3 /* BaseApi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,11 +71,11 @@
 		40DA3CDF1E554F0F00043BF3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		40DA3CE01E554F0F00043BF3 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		40DA3CE11E554F0F00043BF3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		40DA3CF41E5558D600043BF3 /* YbcfApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbcfApi.h; sourceTree = "<group>"; };
-		40DA3CF51E5558D600043BF3 /* YbcfApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbcfApi.m; sourceTree = "<group>"; };
+		40DA3CF41E5558D600043BF3 /* RequestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestApi.h; sourceTree = "<group>"; };
+		40DA3CF51E5558D600043BF3 /* RequestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestApi.m; sourceTree = "<group>"; };
 		40DA3CFD1E5570E300043BF3 /* ConstantStringHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantStringHeader.h; sourceTree = "<group>"; };
-		40DA3CFE1E55887400043BF3 /* YBapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBapi.h; sourceTree = "<group>"; };
-		40DA3CFF1E55887400043BF3 /* YBapi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBapi.m; sourceTree = "<group>"; };
+		40DA3CFE1E55887400043BF3 /* BaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApi.h; sourceTree = "<group>"; };
+		40DA3CFF1E55887400043BF3 /* BaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +139,11 @@
 				40DA3C771E55461E00043BF3 /* Info.plist */,
 				40DA3C8D1E55473B00043BF3 /* TokenOAuth.h */,
 				40DA3C8E1E55473B00043BF3 /* TokenOAuth.m */,
-				40DA3CF41E5558D600043BF3 /* YbcfApi.h */,
-				40DA3CF51E5558D600043BF3 /* YbcfApi.m */,
+				40DA3CF41E5558D600043BF3 /* RequestApi.h */,
+				40DA3CF51E5558D600043BF3 /* RequestApi.m */,
 				40DA3CFD1E5570E300043BF3 /* ConstantStringHeader.h */,
-				40DA3CFE1E55887400043BF3 /* YBapi.h */,
-				40DA3CFF1E55887400043BF3 /* YBapi.m */,
+				40DA3CFE1E55887400043BF3 /* BaseApi.h */,
+				40DA3CFF1E55887400043BF3 /* BaseApi.m */,
 			);
 			path = RequestLib;
 			sourceTree = "<group>";
@@ -166,11 +166,11 @@
 			files = (
 				40DA3CF21E554F0F00043BF3 /* AFURLSessionManager.h in Headers */,
 				40DA3C8F1E55473B00043BF3 /* TokenOAuth.h in Headers */,
-				40DA3CF61E5558D600043BF3 /* YbcfApi.h in Headers */,
+				40DA3CF61E5558D600043BF3 /* RequestApi.h in Headers */,
 				40DA3CE21E554F0F00043BF3 /* AFHTTPRequestSerializer+OAuth2.h in Headers */,
 				40DA3CE81E554F0F00043BF3 /* AFOAuth2Manager.h in Headers */,
 				40DA3CEE1E554F0F00043BF3 /* AFURLRequestSerialization.h in Headers */,
-				40DA3D001E55887400043BF3 /* YBapi.h in Headers */,
+				40DA3D001E55887400043BF3 /* BaseApi.h in Headers */,
 				40DA3CEA1E554F0F00043BF3 /* AFOAuthCredential.h in Headers */,
 				40DA3CE61E554F0F00043BF3 /* AFNetworkReachabilityManager.h in Headers */,
 				40DA3CEC1E554F0F00043BF3 /* AFSecurityPolicy.h in Headers */,
@@ -280,8 +280,8 @@
 				40DA3CED1E554F0F00043BF3 /* AFSecurityPolicy.m in Sources */,
 				40DA3CF11E554F0F00043BF3 /* AFURLResponseSerialization.m in Sources */,
 				40DA3CE51E554F0F00043BF3 /* AFHTTPSessionManager.m in Sources */,
-				40DA3D011E55887400043BF3 /* YBapi.m in Sources */,
-				40DA3CF71E5558D600043BF3 /* YbcfApi.m in Sources */,
+				40DA3D011E55887400043BF3 /* BaseApi.m in Sources */,
+				40DA3CF71E5558D600043BF3 /* RequestApi.m in Sources */,
 				40DA3CE91E554F0F00043BF3 /* AFOAuth2Manager.m in Sources */,
 				40DA3CE31E554F0F00043BF3 /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
 				40DA3CF31E554F0F00043BF3 /* AFURLSessionManager.m in Sources */,

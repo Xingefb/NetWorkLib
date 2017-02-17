@@ -1,16 +1,21 @@
 //
-//  YBapi.h
+//  RequestApi.h
 //  RequestLib
 //
 //  Created by Dzy on 16/02/2017.
 //  Copyright © 2017 Dzy. All rights reserved.
 //
 
-#import "AFHTTPSessionManager.h"
+#import <Foundation/Foundation.h>
 
-@interface YBapi : AFHTTPSessionManager
+@interface RequestApi : NSObject
 
 
-+ (instancetype)sharedManager;
+
+
+
+
+
++ (void)shareInstance;
 
 @end
