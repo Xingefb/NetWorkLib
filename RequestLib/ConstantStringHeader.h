@@ -11,11 +11,10 @@
 
 static NSString *const ClientID = @"";
 static NSString *const Secret = @"";
-static NSString  *const serviceProviderIdentifier = @"YbcfOAuth2Identifier";
+static NSString *const serviceProviderIdentifier = @"YbcfOAuth2Identifier";
 
 static NSString *const BaseUrl = @"";
 static NSInteger const TimeOut = 5;
-
 
 
 
