@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RequestLib"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "This is a custom networking lib RequestLib."
 
   # This description is used to generate tags and improve search results.
