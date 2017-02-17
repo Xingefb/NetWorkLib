@@ -11,6 +11,11 @@
 @interface YbcfApi : NSObject
 
 
+
+
+
+
+
 + (void)shareInstance;
 
 @end
