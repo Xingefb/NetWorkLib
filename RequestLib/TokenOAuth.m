@@ -16,39 +16,39 @@
 
 @implementation TokenOAuth
 
-+ (BOOL )refreshToken {
++ (void )refreshTokenReturn:(void (^)(BOOL))isTrue {
 
-    __block BOOL isSuccess;
     NSURL *baseUrl = [NSURL URLWithString:BaseUrl];
     AFOAuth2Manager *OAuth2Manager = [[AFOAuth2Manager alloc] initWithBaseURL:baseUrl clientID:ClientID secret:Secret];
     AFOAuthCredential *OAuthCredential = [AFOAuthCredential retrieveCredentialWithIdentifier:serviceProviderIdentifier];
     [OAuth2Manager authenticateUsingOAuthWithURLString:@"" refreshToken:OAuthCredential.refreshToken success:^(AFOAuthCredential * _Nonnull credential) {
-        isSuccess = YES;
-
+        if (isTrue) {
+            isTrue(YES);
+        }
     } failure:^(NSError * _Nonnull error) {
-        isSuccess = NO;
-
+        if (isTrue) {
+            isTrue(NO);
+        }
     }];
-
-    return isSuccess;
 
 }
 
-+ (BOOL )getTokenWithName:(NSString *)name andPassword:(NSString *)password {
-
-    __block BOOL isSuccess;
++ (void )getTokenWithName:(NSString *)name andPassword:(NSString *)password andReturn:(void (^)(BOOL))success {
     
     NSURL *baseUrl = [NSURL URLWithString:BaseUrl];
     AFOAuth2Manager *OAuth2Manager = [[AFOAuth2Manager alloc] initWithBaseURL:baseUrl clientID:ClientID secret:Secret];
     [OAuth2Manager authenticateUsingOAuthWithURLString:@"" username:name password:password scope:nil success:^(AFOAuthCredential * _Nonnull credential) {
         [AFOAuthCredential storeCredential:credential withIdentifier:serviceProviderIdentifier];
-        isSuccess = YES;
+        if (success) {
+            success(YES);
+        }
+        
     } failure:^(NSError * _Nonnull error) {
-        isSuccess = NO;
+        if (success) {
+            success(NO);
+        }
     }];
     
-    return isSuccess;
-
 }
 
 + (TokenOAuth *)instance {

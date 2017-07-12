@@ -11,9 +11,9 @@
 
 @interface TokenOAuth : NSObject
 
-+ (BOOL )getTokenWithName:(NSString *)name andPassword:(NSString *)password;
++ (void )getTokenWithName:(NSString *)name andPassword:(NSString *)password andReturn:(void (^)(BOOL))success;
 
-+ (BOOL )refreshToken;
++ (void )refreshTokenReturn:(void (^)(BOOL))isTrue;
 
 + (TokenOAuth *)instance;
 

@@ -16,10 +16,6 @@
 
 
 
-
-
-
-
 + (void)shareInstance {
 
     static RequestApi *instance = nil;

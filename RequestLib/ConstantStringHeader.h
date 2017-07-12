@@ -14,7 +14,7 @@ static NSString *const Secret = @"";
 static NSString *const serviceProviderIdentifier = @"YbcfOAuth2Identifier";
 
 static NSString *const BaseUrl = @"";
-static NSInteger const TimeOut = 5;
+static NSInteger const TimeOut = 30;
 
 
 

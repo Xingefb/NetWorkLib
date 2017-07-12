@@ -14,8 +14,6 @@
 @implementation BaseApi
 
 
-
-
 - (instancetype)initWithBaseURL:(NSURL *)url {
     
     if (self = [super initWithBaseURL:url]) {
@@ -31,7 +29,9 @@
         [self.requestSerializer setValue:[NSString stringWithFormat:@"%@", [[NSLocale preferredLanguages] componentsJoinedByString:@","]] forHTTPHeaderField:@"Accept-Language"];
         
     }
+    
     return self;
+    
 }
 
 + (instancetype)sharedManager {

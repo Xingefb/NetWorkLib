@@ -12,10 +12,6 @@
 
 
 
-
-
-
-
 + (void)shareInstance;
 
 @end
