@@ -13,7 +13,6 @@
 #import "AFOAuth2Manager.h"
 #import "AFHTTPSessionManager.h"
 
-
 @implementation TokenOAuth
 
 + (void )refreshTokenReturn:(void (^)(BOOL))isTrue {
@@ -34,6 +33,10 @@
 }
 
 + (void )getTokenWithName:(NSString *)name andPassword:(NSString *)password andReturn:(void (^)(BOOL))success {
+    
+    //只需要一个参数,如果参数存在程序继续运行,如果参数为空,则程序停止打印日志
+    NSParameterAssert(name);
+    NSParameterAssert(password);
     
     NSURL *baseUrl = [NSURL URLWithString:BaseUrl];
     AFOAuth2Manager *OAuth2Manager = [[AFOAuth2Manager alloc] initWithBaseURL:baseUrl clientID:ClientID secret:Secret];
@@ -58,7 +61,6 @@
         if (_instance == nil) {
             _instance = [[self alloc] init];
 
-            
         }
     }
 

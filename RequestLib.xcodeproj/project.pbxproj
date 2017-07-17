@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4090ED0D1F1C509600118895 /* DzyRequestHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4090ED0C1F1C509600118895 /* DzyRequestHeader.h */; };
 		40DA3C7D1E55461E00043BF3 /* RequestLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DA3C731E55461E00043BF3 /* RequestLib.framework */; };
 		40DA3C821E55461E00043BF3 /* RequestLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DA3C811E55461E00043BF3 /* RequestLibTests.m */; };
 		40DA3C8F1E55473B00043BF3 /* TokenOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DA3C8D1E55473B00043BF3 /* TokenOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4090ED0C1F1C509600118895 /* DzyRequestHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DzyRequestHeader.h; sourceTree = "<group>"; };
 		40DA3C731E55461E00043BF3 /* RequestLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RequestLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA3C771E55461E00043BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40DA3C7C1E55461E00043BF3 /* RequestLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RequestLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 				40DA3CFD1E5570E300043BF3 /* ConstantStringHeader.h */,
 				40DA3CFE1E55887400043BF3 /* BaseApi.h */,
 				40DA3CFF1E55887400043BF3 /* BaseApi.m */,
+				4090ED0C1F1C509600118895 /* DzyRequestHeader.h */,
 			);
 			path = RequestLib;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				40DA3CF61E5558D600043BF3 /* RequestApi.h in Headers */,
 				40DA3CE21E554F0F00043BF3 /* AFHTTPRequestSerializer+OAuth2.h in Headers */,
 				40DA3CE81E554F0F00043BF3 /* AFOAuth2Manager.h in Headers */,
+				4090ED0D1F1C509600118895 /* DzyRequestHeader.h in Headers */,
 				40DA3CEE1E554F0F00043BF3 /* AFURLRequestSerialization.h in Headers */,
 				40DA3D001E55887400043BF3 /* BaseApi.h in Headers */,
 				40DA3CEA1E554F0F00043BF3 /* AFOAuthCredential.h in Headers */,

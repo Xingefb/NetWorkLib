@@ -9,8 +9,8 @@
 #import "RequestApi.h"
 #import "ConstantStringHeader.h"
 
-#import "BaseApi.h"
 #import "AFOAuth2Manager.h"
+#import "BaseApi.h"
 
 @implementation RequestApi
 

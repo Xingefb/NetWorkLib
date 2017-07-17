@@ -17,5 +17,4 @@ static NSString *const BaseUrl = @"";
 static NSInteger const TimeOut = 30;
 
 
-
 #endif /* ConstantStringHeader_h */
