@@ -23,7 +23,8 @@
             [self.requestSerializer setAuthorizationHeaderFieldWithCredential:Credential];
         }
         self.requestSerializer.timeoutInterval = TimeOut;
-        self.responseSerializer = [AFJSONResponseSerializer serializer];
+        self.requestSerializer = [AFHTTPRequestSerializer serializer];
+//        self.responseSerializer = [AFJSONResponseSerializer serializer];
         self.responseSerializer.acceptableContentTypes = [[NSSet alloc] initWithObjects:@"application/xml", @"text/xml",@"text/html", @"application/json",@"text/plain",nil];
         [self.requestSerializer setValue:@"gzip" forHTTPHeaderField:@"Content-Encoding"];
         [self.requestSerializer setValue:[NSString stringWithFormat:@"%@", [[NSLocale preferredLanguages] componentsJoinedByString:@","]] forHTTPHeaderField:@"Accept-Language"];
